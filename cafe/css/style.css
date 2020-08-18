@@ -8683,7 +8683,51 @@ textarea.form-control {
   -webkit-animation: loader-dash 1.5s ease-in-out infinite;
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
+/ 13. Footer
+*/
+.footer {
+  padding: 60px 0 24px;
+  position: relative;
+}
 
+.footer .company-sub-menu li {
+  padding: 8px 0;
+}
+
+.footer .company-sub-menu li a {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #b5becc;
+}
+
+.footer .company-sub-menu li a:hover {
+  color: #ff8057 !important;
+  margin-left: 6px;
+}
+
+.footer .footer-social-list a {
+  border: 1px solid #d9dee5;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 38px;
+  text-align: center;
+  color: #bbc3d0;
+  font-size: 18px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer .footer-social-list a:hover {
+  background: #ff8057;
+  color: #ffffff;
+  border-color: #ff8057;
+  -webkit-box-shadow: 0 0 2px 7px rgba(255, 128, 87, 0.15);
+          box-shadow: 0 0 2px 7px rgba(255, 128, 87, 0.15);
+}
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
 @-webkit-keyframes loader-rotate {
   100% {
     -webkit-transform: rotate(360deg);
