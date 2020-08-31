@@ -69,13 +69,65 @@
                 <li class="active"><a href="index.html"><span>Меню</span></a></li>
                 <li><a href="#"><span>Правильное питание</span></a></li>
                 <li><a href="#"><span>Для сладкоежек</span></a></li>
-                <li><a href="#"><span>Акции</span></a></li>               
+                <li><a href="#"><span>Акции</span></a></li>
+
+                <li><span><a href="#">Ваш город:</span></a></li>
+                <style>.containerss div {display: none;}</style>
+
+<select id="selectItem">
+
+<option id="vladimir">Владимир</option>
+
+</select>           
               </ul>
+
+             
+
+
+
+<div class="containerss">
+
+<div class="chelyabinsk"><span class="small">Тел.:</span> НОМЕР ТЕЛЕФОНА<br><span class="small">Email:</span> <a href="mailto:mail@mail.ru">mail@mail.ru</a></div>
+<div class="moskva"><span class="small">Тел.:</span> НОМЕР ТЕЛЕФОНА<br><span class="small">Email:</span> <a href="mailto:mail@mail.ru">mail@mail.ru</a></div>
+<div class="piter"><span class="small">Тел.:</span> НОМЕР ТЕЛЕФОНА<br><span class="small">Email:</span> <a href="mailto:mail@mail.ru">mail@mail.ru</a></div>
+<div class="nnovgor"><span class="small">Тел.:</span> НОМЕР ТЕЛЕФОНА<br><span class="icq">426-968-289</span><br><span class="small">Email:</span> <a href="mailto:mail@mail.ru">mail@mail.ru</a></div>
+
+</div>
+
+
+
+<script type="text/javascript">
+<!--
+$( function() {
+
+if (localStorage.getItem("myKey")) {
+    var stored_select = localStorage.getItem("myKey");
+    $('#' + stored_select).prop( "selected", true );
+    $('.' + stored_select).show();
+    } else {
+$('.chelyabinsk').show();
+}
+});
+
+$("#selectItem").change(function(){
+    $('.containerss').find('div').hide();
+    var selected = $('#selectItem option:selected').attr('id');
+    localStorage.setItem("myKey", selected);
+    $('.' + selected).show();
+});  
+-->
+</script>
 
             </div>
 
+
             <div class="col px-5 copyright">
+            	
+            	<p>Напсать нашему менеджеру </br>
+            		<a href="mailto:bakery.enjoy@bk.ru">bakery.enjoy@bk.ru</a></p>
+
             	<p>Bakery Enjoy &copy;<script>document.write(new Date().getFullYear());</script></br> All rights reserved <br></a></p>
+
             </div>
           </div>
         </div>
@@ -245,6 +297,7 @@
                 <li class="ftco-animate"><a href="#"><span class="icon-telegram"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-pinterest"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-vk"></span></a></li>
+                <li class="ftco-animate"><a href="mailto:bakery.enjoy@bk.ru"><span class="icon-google"></span></a></li>
       			 </ul>
 	            </div>
 	          </div>
